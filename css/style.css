@@ -1,0 +1,127 @@
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;	
+	margin: 0 0 0 0;
+}
+html{
+	background: url("./media/background-texture.jpg") no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#wrap {
+	min-width: 800px;	
+}
+header{
+	height: 50px;
+	width: 100%;
+	min-width: 800px;
+	padding: 0 20px;
+	padding-right: 20px;
+	background-color: gainsboro;
+	border-bottom: thin solid black;
+	position: fixed;
+	z-index: 2;
+	box-shadow: 0 0 5px black;
+}
+#logo{
+	
+}
+#sitename {
+	float: left;
+	line-height: 50px;
+	font-size: xx-large;
+	font-weight: bold;
+}
+#topnav{
+	float: right;
+	line-height: 50px;
+	margin-right: 40px;
+	font-weight: bold;
+	font-size: large;
+	text-transform: uppercase;
+}
+#container{
+	float: left;
+	width: 60%;
+	margin-left: 30%;
+	margin-right: 10%;
+	top: 51px;
+	xbackground-color: gray;
+	position: relative;
+}
+#container-wrapper{
+	position: absolute;
+	width: 100%;
+	xpadding: 5px;
+}
+#container-wrapper::before, #container-wrapper::after{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: red;
+}
+#pagehead{
+	
+}
+#breadcrumbs{
+	font-size: small;
+	height: 20px;
+	xtop: 51px;
+	xwidth: 60%;
+	padding: 0 20px;
+	background-color: yellow;
+	xposition: fixed;	
+}
+#pagetitle{
+	font-size: x-large;
+	font-weight: bold;
+	line-height: 60px;
+	height: 60px;
+	padding: 0 20px;
+	background-color: red;
+	xbox-shadow: 0 0 0 0 white, 0 6px 4px black;
+	xz-index: 10;
+}
+#subnav{
+	
+}
+#content{
+	min-height: 400px;
+	background-color: blue;
+	a[href$=".pdf"]:after {content: " (PDF)";};	
+	a[href$=".pdf"]:after {content: " (PDF, "attr(data-size)")";};
+}
+footer{
+	height: 120px;
+	background-color: gray;
+}
+#socialbar{
+	background-color: orange;
+	height: 30px;
+	padding: 0 20px;
+	text-align: justify;
+	line-height: 30px;
+}
+#socialbar div{
+	width: 70px;
+	height: 30px;
+	display: inline-block;
+	xbackground: white;
+}
+#socialbar:after{
+	content: '';
+	width: 100%;
+	display: inline-block;
+}
+
+#contact{
+
+}
+#footlogo">
+			
+#footnav">
+
