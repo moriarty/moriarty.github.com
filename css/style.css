@@ -4,7 +4,7 @@ body {
 	margin: 0 0 0 0;
 }
 html{
-	background: url("./media/background-texture.jpg") no-repeat center center fixed;
+	background: url("../media/background-texture.jpg") no-repeat center center fixed;
 	-webkit-background-size:cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -24,6 +24,7 @@ header{
 	position: fixed;
 	z-index: 2;
 	box-shadow: 0 0 5px black;
+	xvisibility: hidden;
 }
 #logo{
 	
@@ -45,6 +46,7 @@ header{
 #container{
 	float: left;
 	width: 60%;
+	min-width: 600px;
 	margin-left: 30%;
 	margin-right: 10%;
 	top: 51px;
@@ -81,10 +83,22 @@ header{
 	font-weight: bold;
 	line-height: 60px;
 	height: 60px;
-	padding: 0 20px;
+	xpadding: 0 20px;
 	background-color: red;
 	xbox-shadow: 0 0 0 0 white, 0 6px 4px black;
 	xz-index: 10;
+	text-align: center;
+}
+.floatingHeader {
+
+  position: fixed;
+  width: 100%;
+  min-width: 600px;
+  top: 51px;
+  xmargin-right: 40%;
+  visibility: hidden;
+  xpadding-left: 0;
+  xpadding-right: 0;
 }
 #subnav{
 	
@@ -117,11 +131,30 @@ footer{
 	width: 100%;
 	display: inline-block;
 }
-
-#contact{
-
+#lowerfoot{
+	text-align: justify;
 }
-#footlogo">
-			
-#footnav">
-
+#lowerfoot div{
+	width: 20%;
+	display: inline-block;
+}
+#lowerfoot:after{
+	content: '';
+	width: 100%;
+	display: inline-block;
+}
+#contact{
+	text-align: left;
+	font-size: small;
+	padding: 5px;
+}
+#footlogo{
+	text-align: center;
+	padding: 5px;
+	font-size: 60px;
+	line-height: 30px;
+}
+#footnav{
+	text-align: right;
+	padding: 5px;
+}
