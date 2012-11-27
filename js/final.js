@@ -18,7 +18,7 @@ function UpdateTableHeaders() {
        floatingHeader.css({
           "width": width
        })
-       if ((scrollTop > offset.top) && (scrollTop < offset.top + el.height())) {
+       if ((scrollTop > offset.top -31) && (scrollTop < offset.top -31 + el.height())) {
            floatingHeader.css({
             "visibility": "visible"
            });
