@@ -8,19 +8,18 @@
   }
 **/
 function carousel_bg(id) {
-     // add images here..
-    var bgimgs = [ '1920x625_Sonata_homepage_image.jpg', 
-    '1920x625_Equus_homepage_image.jpg', 
-    '5_home_hero_1920x625_CF_background.jpg' ];
+    var bgimgs = [ 
+    'body-bg-1.png', 'body-bg-2.png', 'body-bg-3.png',
+    'body-bg-4.png','body-bg-5.png','body-bg-6.png', 
+    'body-bg-7.png', 'body-bg-8.png','body-bg-9.png',
+    'body-bg-10.png' ];
     var img = bgimgs[id];
-    var cnt = 3; // change this number when adding images..
+    
+    $('#body').css("background-image", "url(./media/"+img+")");
 
-    $('#body').css("background-image", "url(http://www.pitstopmotors.com.ph/images/"+img+")");
+    id=Math.floor(Math.random()*bgimgs.length)
 
-    id = id + 1;
-    if (id==cnt) id = 0;
-
-    setTimeout("carousel_bg("+id+")", 10000);
+    setTimeout("carousel_bg("+id+")", 60000);
   }
 
 function UpdateTableHeaders() {
@@ -90,17 +89,6 @@ $(function() {
 
   $(document).ready(function() {
     carousel_bg(0);
-    /*
-    // Create the dropdown base
-    $("<select />").appendTo("nav");
-
-    // Create default option "Go to..."
-    $("<option />", {
-       "selected": "selected",
-       "value"   : "",
-       "text"    : "Go to..."
-    }).appendTo("nav select");
-
     $("nav a").each(function() {
      var el = $(this);
      $("<option />", {
@@ -108,7 +96,7 @@ $(function() {
          "text"    : el.text()
      }).appendTo("nav select");
     });
-*/
+
     $("nav a").each(function() {
      var el = $(this);
      $("<option />", {
@@ -118,7 +106,7 @@ $(function() {
     });
   });
 
-//   $("#topnavlist").tinyNav();
+   //$("#topnavlist").tinyNav();
    var clonedHeaderRow;
 
    $(".persist-area").each(function() {
@@ -152,5 +140,10 @@ $(function() {
   $(window)
     .resize(UpdateTableHeaders)
     .trigger("resize");
-   
+   $("nav select").change(function(){
+    window.location = $(this).find("option:selected").val();
+   })
+   $("#footnav select").change(function(){
+    window.location = $(this).find("option:selected").val();
+   })
 });
