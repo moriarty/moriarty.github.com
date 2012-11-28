@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+    <meta name="author" content="Alex Moriarty">
+    <meta name="description" content="PAGE CONTENT">
+
+    <title>PAGE TITLE</title>
+
+	<link rel="stylesheet" type="text/css" href="./css/style.css" media="screen"/>
+</head>
+<body id="body">
+	<div id="wrap">
+	<header>
+		<div id="logo">
+		</div><!--End Logo-->
+		<div id="sitename">
+			a. moriarty
+		</div><!--End Name-->
+		<div id="topnav">
+			<ul id="topnavlist">
+				<li class="current"><a href="">about</a></li>
+				<li><a href="">experience</a></li>
+				<li><a href="">portfolio</a></li>
+				<li><a href="">research</a></li>
+				<li><a href="">hobbies</a></li>
+			</ul>
+		</div><!--End TopNav-->
+	</header>
+	<div id="container">
+		<div id="container-wrapper" class="persist-area shadow-right">
+		<div id="pagehead">
+			<div id="breadcrumbs">
+				somepage > somepage
+			</div><!--End BreadCrumbs-->
+			<div id="pagetitle" class="persist-header">
+				THIS IS A TEST PAGE
+			</div>
+			<div id="subnav">
+			</div><!--End SubNav-->
+		</div><!--End PageHead-->
+		<div id="content">
+			<h3>Layout</h3>
+			<p>Five reasons why my site adheres to the principles of usable website design</p>
+			<ol>
+				<li>No extreme colours (<a href="http://web.cs.dal.ca/~farrag">Example Here</a>)</li>
+				<li>Constistency Accross pages. You're not going to get a shock when you hit the next page</li>
+				<li>I used a web friendly font. You can't go wrong with <a href="http://www.imdb.com/title/tt0847817/">Helvetica</a></li>
+				<li>Pages are kept simple.</li>
+				<li>PDF files can be nasty, and you come accross them alot in research. PDF links get a warning added with CSS automatically <a href="somefile.pdf">not valid link</a></li>
+			</ol>
+			<h3>Effects</h3>
+			<p>I used jQuery to automatically populate my navigation selection menus. This isn't really an effect but it allows you to move the window to a smaller dimension and the navigation to not get all bunched together. It also keeps the navigation menu synced in the header and in the footer. Ideally I would have set the current page in navigation class to active, but I didn't want to deal with regex too much, I would perfer to do that serverside on page generation. I suppose I could quickly add a hover function to do something to be of an "effect"</p>
+			<p>I used jQuery to always display the page title in the sub header. I used css to toggle the displaying of the top navigation menu when the screen is smaller than a certain size, but I used jQuery to populate the selection options that are displayed. I'll add shadowbox for the page with photos. I've added a changing background image on the Home page via jQuery</p>
+			<h3>SEO</h3>
+			<ol>
+			
+			</ol>
+			<p>text</p>
+			<h3>Accessibility</h3>
+			<p>text</p>
+			<h3>References</h3>
+			<p>I refered to <a href="http://css-tricks.com">CSS-Tricks</a> and Stack-Overflow, but didn't keep track of specific articles because it wasn't required.</p>
+		</div><!--End Content-->
+		<footer>
+			<div id="socialbar">
+				<div class="socialbar-box">github</div>
+				<div class="socialbar-box">linkedin</div>
+				<div class="socialbar-box">facebook</div>
+				<div class="socialbar-box">google+</div>
+				<div class="socialbar-box">twitter</div>
+			</div><!--End SocialBar-->
+			<div id="lowerfoot">
+			<div id="contact">
+				<address>
+					<b>Alexander Moriarty</b><br>
+					Dalhousie University<br>
+					Halifax, NS, Canada<br>
+					moriarty"at"cs.dal.ca
+				</address>
+			</div><!--End Contact-->
+			<div id="footlogo">
+				am
+			</div><!--End FootLogo-->
+			<div id="footnav">
+				foot nav<br>
+				Documentation<br>
+				Updated<br>
+				Copyright
+			</div><!--End FootNav-->
+		</div><!--End LowerFoot-->
+		</footer>
+	</div><!--End Container-wrapper-->
+	</div><!--End Container-->
+	</div><!--End Wrap-->
+	<!--Javascript goes here-->
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script> 
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/tinynav.js"></script>
+	<script type="text/javascript" src="js/final.js"></script>
+	<!---->
+</body>
+</html>

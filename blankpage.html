@@ -8,9 +8,9 @@
 
     <title>PAGE TITLE</title>
 
-	<link rel="stylesheet" type="text/css" href="./css/style.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="./css/style.css" media="all"/>
 </head>
-<body>
+<body id="body">
 	<div id="wrap">
 	<header>
 		<div id="logo">
@@ -18,15 +18,18 @@
 		<div id="sitename">
 			a. moriarty
 		</div><!--End Name-->
-		<div id="topnav">
+		<nav id="topnav">
 			<ul id="topnavlist">
-				<li><a href="">about</a></li>
-				<li><a href="">experience</a></li>
-				<li><a href="">portfolio</a></li>
-				<li><a href="">research</a></li>
-				<li><a href="">hobbies</a></li>
+				<li class="active"><a href="./about.html">About</a></li>
+				<li><a href="./experience.html">Experience</a></li>
+				<li><a href="./portfolio.html">Portfolio</a></li>
+				<li><a href="./research.html">Research</a></li>
+				<li><a href="./hobbies.html">Hobbies</a></li>
 			</ul>
-		</div><!--End TopNav-->
+			<select>
+				<option value="" selected="selected">Navigation</option>
+			</select><br>
+		</nav><!--End TopNav-->
 	</header>
 	<div id="container">
 		<div id="container-wrapper" class="persist-area shadow-right">
@@ -64,7 +67,12 @@
 				am
 			</div><!--End FootLogo-->
 			<div id="footnav">
-				foot nav
+				<select>
+					<option value="" selected="selected">Navigation</option>
+				</select><br>
+				Documentation<br>
+				Updated<br>
+				Copyright
 			</div><!--End FootNav-->
 		</div><!--End LowerFoot-->
 		</footer>
