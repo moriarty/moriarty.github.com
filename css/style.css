@@ -40,8 +40,12 @@ header{
 	font-size: xx-large;
 	font-weight: bold;
 }
+#sitename a{
+	text-decoration: none;
+}
 #sitename:hover{
 	text-decoration: underline;
+	background: darkgray;
 }
 #topnav{
 	float: right;
@@ -128,6 +132,7 @@ header{
 }
 #breadcrumbs{
 	font-size: small;
+	text-transform: lowercase;
 	height: 20px;
 	xtop: 51px;
 	xwidth: 60%;
@@ -200,6 +205,7 @@ header{
   xpadding-right: 0;
 }
 #content{
+	padding-bottom: 20px;
 	xpadding: 10px 20px;
 	min-height: 400px;
 	background-color: white;
@@ -216,9 +222,15 @@ header{
 #content a[href$=".pdf"]:after {content: " (PDF, "attr(data-size)")";}
 
 #content p{ 
-		margin: 0;
-		padding: 5px 10px 5px 10px;
-	}
+	line-height: 150%;
+	margin: 0;
+	padding: 5px 10px 5px 10px;
+}
+#content table{
+	text-align: left;
+}
+#content th[colspan="2"]{ text-align: center;}
+#content th{text-align: right;}
 
 footer{
 	height: 120px;
