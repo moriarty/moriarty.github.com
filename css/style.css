@@ -293,3 +293,15 @@ footer{
 	text-align: right;
 	padding: 5px;
 }
+#playpause{
+	position: fixed;
+	left: 5px;
+	bottom: 5px;
+	z-index: 10;
+	height: 40px;
+	width: 40px;
+	xbackground: gray;
+	background-size: 100%;
+	background-image: url("../media/playpause.png");
+
+}
