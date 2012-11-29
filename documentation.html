@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
 
     <meta name="author" content="Alex Moriarty">
-    <meta name="description" content="PAGE CONTENT">
+    <meta name="description" content="Documentation of informatics 1606 introduction to website design final project">
 
-    <title>PAGE TITLE</title>
+    <title>documentation amoriarty</title>
 
 	<link rel="stylesheet" type="text/css" href="./css/style.css" media="screen"/>
 </head>
@@ -20,11 +20,11 @@
 		</div><!--End Name-->
 		<div id="topnav">
 			<ul id="topnavlist">
-				<li class="current"><a href="">about</a></li>
-				<li><a href="">experience</a></li>
-				<li><a href="">portfolio</a></li>
-				<li><a href="">research</a></li>
-				<li><a href="">hobbies</a></li>
+				<li><a href="./about.html">About</a></li>
+				<li><a href="./experience.html">Experience</a></li>
+				<li><a href="./portfolio.html">Portfolio</a></li>
+				<li><a href="./research.html">Research</a></li>
+				<li><a href="./hobbies.html">Hobbies</a></li>
 			</ul>
 		</div><!--End TopNav-->
 	</header>
@@ -32,34 +32,54 @@
 		<div id="container-wrapper" class="persist-area shadow-right">
 		<div id="pagehead">
 			<div id="breadcrumbs">
-				somepage > somepage
+				<a href="./home.html">home</a> > <a href="./documentation.html">documentation</a>
 			</div><!--End BreadCrumbs-->
 			<div id="pagetitle" class="persist-header">
-				THIS IS A TEST PAGE
+				INFX 1606 Final Project Documentation
 			</div>
 			<div id="subnav">
 			</div><!--End SubNav-->
 		</div><!--End PageHead-->
 		<div id="content">
+			<h3>Content</h3>
+			<ul><li>Required table located on the <a href="./about">about</a> page.</li>
+				<li>Required list located on the <a href="./research">research</a> page.</li>
+			</ul>
 			<h3>Layout</h3>
 			<p>Five reasons why my site adheres to the principles of usable website design</p>
 			<ol>
 				<li>No extreme colours (<a href="http://web.cs.dal.ca/~farrag">Example Here</a>)</li>
 				<li>Constistency Accross pages. You're not going to get a shock when you hit the next page</li>
-				<li>I used a web friendly font. You can't go wrong with <a href="http://www.imdb.com/title/tt0847817/">Helvetica</a></li>
+				<li>I used a web friendly font, and in my content paragraphs I modified the spacing to make it easier to read. Besides, You can't go wrong with <a href="http://www.imdb.com/title/tt0847817/">Helvetica</a></li>
 				<li>Pages are kept simple.</li>
-				<li>PDF files can be nasty, and you come accross them alot in research. PDF links get a warning added with CSS automatically <a href="somefile.pdf">not valid link</a></li>
+				<li>PDF files can be nasty, and you come accross them a lot in research. PDF links get a warning added with CSS automatically <a href="somefile.pdf">not valid link</a> The links to pdf files also support a 'data-size' <a href="foobar.pdf" data-size="25Mb">not valid link</a>  </li>
 			</ol>
 			<h3>Effects</h3>
-			<p>I used jQuery to automatically populate my navigation selection menus. This isn't really an effect but it allows you to move the window to a smaller dimension and the navigation to not get all bunched together. It also keeps the navigation menu synced in the header and in the footer. Ideally I would have set the current page in navigation class to active, but I didn't want to deal with regex too much, I would perfer to do that serverside on page generation. I suppose I could quickly add a hover function to do something to be of an "effect"</p>
-			<p>I used jQuery to always display the page title in the sub header. I used css to toggle the displaying of the top navigation menu when the screen is smaller than a certain size, but I used jQuery to populate the selection options that are displayed. I'll add shadowbox for the page with photos. I've added a changing background image on the Home page via jQuery</p>
+			<p>I used jQuery to automatically populate my navigation selection menus. This isn't really an effect but it allows you to move the window to a smaller dimension and the navigation to not get all bunched together. It also keeps the navigation menu synced in the header and in the footer. Ideally I would have set the current page in navigation class to active, but I didn't want to deal with regex too much, I would perfer to do that serverside on page generation. I suppose I could quickly add a hover function to do something to be of an "effect" but CSS is better for that. I've added the click on site name and return to home via jquery</p>
+			<p>I used jQuery to always display the page title in the sub header. I used css to toggle the displaying of the top navigation menu when the screen is smaller than a certain size, but I used jQuery to populate the selection options that are displayed. I'll add shadowbox or some other plugin for the hobbie page with photos. I'm randomly setting the background every minute via javascript and jQuery.
+			On the about me page, I calculate my age with jQuery.</p>
 			<h3>SEO</h3>
 			<ol>
-			
+			<li>Manually submit site to Google crawler</li>
+			<li>Unique accurate summaries in the page description and title tags</li>
+			<li>Simple to understand URL (www.amoriarty.com)</li>
+			<li>Short urls paths and words not numbers and information the user doesn't need for filenames. *</li>
+			<li>This site is too small currently, but I've already added the breadcrumb in the page header and would theoretically optimize my directory structure for easy navigation by both users and search engines.</li>
 			</ol>
-			<p>text</p>
 			<h3>Accessibility</h3>
-			<p>text</p>
+			<ol><li>Three Flashes (2.3.2):  Web pages do not contain anything that flashes more than three times in any one second period. (Level AAA)</li>
+				<li>Multiple Ways (2.4.5): More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process. (Level AA) navigation in header and footer</li>
+				<li>
+				Location (2.4.8): Information about the user's location within a set of Web pages is available. (Level AAA) breadcrumbs
+				</li>
+				<li>
+					Consistent Navigation (3.2.3): Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user. (Level AA) This is similar to 2.4.5 but I thought I would mention again that my navigation menu is only set once in the header, and is the same on each page, the selection menu in the footer and header are both generated with javascript to ensure they remain the same.
+				</li>
+				<li>
+					Use of Color (1.4.1): Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A) Most importantly, it does not look like <a href="http://web.cs.dal.ca/~farrag">this</a>
+				</li>
+			</ol>
+			<p>No requirement to upload site to cs server but I place it there anyway (It will happen once I push/pull the changes from github). I'll plan on using this a base for my new template at www.amoriarty.com but will first switch it over to template for wordpress or drupal.</p>
 			<h3>References</h3>
 			<p>I refered to <a href="http://css-tricks.com">CSS-Tricks</a> and Stack-Overflow, but didn't keep track of specific articles because it wasn't required.</p>
 		</div><!--End Content-->

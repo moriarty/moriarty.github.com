@@ -7,12 +7,13 @@
     });
   }
 **/
-function carousel_bg(id) {
+function carousel_bg() {
     var bgimgs = [ 
     'body-bg-1.png', 'body-bg-2.png', 'body-bg-3.png',
     'body-bg-4.png','body-bg-5.png','body-bg-6.png', 
     'body-bg-7.png', 'body-bg-8.png','body-bg-9.png',
     'body-bg-10.png' ];
+    id=Math.floor(Math.random()*bgimgs.length)
     var img = bgimgs[id];
     
     $('#body').css("background-image", "url(./media/"+img+")");
@@ -36,6 +37,7 @@ function UpdateTableHeaders() {
           "width": width,
           "opacity": "1"
        })
+       // Fix for when the window is made narrower
        floatingHeader.css("left",  $(".persist-header", this).offset().left - $(window).scrollLeft());
        if ((scrollTop > offset.top -31) && (scrollTop < offset.top -31 + el.height())) {
            floatingHeader.css({
@@ -74,8 +76,17 @@ function UpdateSubHeaders() {
 //   });
 //}
 
-// DOM Ready      
 $(function() {
+
+  $("#sitename").click(function(){
+      var loc = $(this).find("a").attr("href");
+      if (typeof(loc) != "undefined"){
+        window.location = loc;
+      } else {
+        window.location = "./home.html"
+        //window.location = "./index.php" // for www.amoriarty.com home.html is just for final
+      }
+  });
 
   var nav = document.getElementById('topnav'),
         anchor = nav.getElementsByTagName('a'),
@@ -86,9 +97,14 @@ $(function() {
         }
     }
 
+  $(document).ready(function() {
+    var d = new Date()
+    var age = d.getFullYear() - 1990;
+    $("#age").append(age);
+  })
 
   $(document).ready(function() {
-    carousel_bg(0);
+    carousel_bg();
     $("nav a").each(function() {
      var el = $(this);
      $("<option />", {
