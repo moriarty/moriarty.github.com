@@ -43,9 +43,10 @@ header{
 #sitename a{
 	text-decoration: none;
 }
-#sitename:hover{
-	text-decoration: underline;
+#sitename:hover {
 	background: darkgray;
+	text-decoration: underline;
+	
 }
 #topnav{
 	float: right;
