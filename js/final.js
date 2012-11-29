@@ -97,7 +97,9 @@ $(function() {
         }
     }
 
+  Shadowbox.init();
   $(document).ready(function() {
+
     var d = new Date()
     var age = d.getFullYear() - 1990;
     $("#age").append(age);
