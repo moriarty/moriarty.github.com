@@ -2,7 +2,7 @@ body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;	
 	margin: 0 0 0 0;
-	background: url("../media/background-texture.jpg") no-repeat center center fixed;
+	background: url("../media/background-texture.jpg") no-repeat center 51px fixed;
 	-webkit-background-size:cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -12,8 +12,16 @@ body a{
 	color: black;
 }
 html{
-	
-}
+
+}#new-wrap{
+	margin: 0 0 0 0;
+	background: url("../media/background-texture.jpg") no-repeat center 31px fixed;
+	-webkit-background-size:cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}	
 #wrap {
 	min-width: 1000px;	
 }
