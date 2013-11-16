@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0038)https://my.dal.ca/cp/home/displaylogin -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script language="JavaScript" src="https://my.dal.ca/js/clientsniffer.js"></script>
+<script language="JavaScript" src="https://my.dal.ca/js/util.js"></script>
+
+<link rel="stylesheet" href="https://my.dal.ca/misc/style.css" type="text/css">
+<link rel="stylesheet" href="https://my.dal.ca/custom/dal2/custom.css" type="text/css">
+<link rel="stylesheet" href="https://my.dal.ca/cp/content/style.css" type="text/css">
+
+
+<!-- DAL dalhousie custom login page header, stylesheet and search functions -->
+<!-- requires the dalhousie portal skin to be loaded in /custom/dal2 -->
+
+<title>MAIN_TITLE</title>
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="https://my.dal.ca/custom/dal2/custom.css">
+<link rel="stylesheet" type="text/css" media="screen, print" href="https://my.dal.ca/custom/dal2/uniform.default.css">
+
+<!-- Dal Alert -->
+<script type="text/javascript" src="https://my.dal.ca/custom/dal2/js/postDalAlert.js"></script>
+<!-- Dal Alert end -->
+
+<script type="text/javascript" src="https://my.dal.ca/custom/dal2/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="https://my.dal.ca/custom/dal2/js/jquery-ui-1.7.2.custom.min.js"></script>
+<script type="text/javascript" src="https://my.dal.ca/custom/dal2/js/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="https://my.dal.ca/custom/dal2/js/util(1).js"></script>
+<script type="text/javascript" src="https://my.dal.ca/custom/dal2/js/k_button.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function fnMiniSearch(frThis) {
+  if(frThis.sitesearch.options[frThis.sitesearch.selectedIndex].value == "") {
+    frThis.client.value="1_frontend";
+    frThis.proxystylesheet.value="1_frontend";
+  }
+  else {
+    frThis.client.value=frThis.dal_frontend.value;
+    frThis.proxystylesheet.value=frThis.dal_frontend.value;
+  }
+  return true;
+}
+//-->
+</script>
+
+<!-- Start Analytics -->
+<script type="text/javascript">
+  /* Dal Google Analytics */
+  var gaJsHost = (('https:' == document.location.protocol) ? 'https://ssl.' : 'http://www.');
+  document.write(unescape('%3Cscript src=%27' + gaJsHost + 'google-analytics.com/ga.js%27 type=%27text/javascript%27%3E%3C/script%3E'));
+</script><script src="https://my.dal.ca/custom/dal2/js/ga.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+  var dalMainTracker = _gat._getTracker('UA-746116-2');
+  dalMainTracker._setDomainName('dal.ca');
+  dalMainTracker._addOrganic('search.dal.ca', 'q');
+  dalMainTracker._addOrganic('googlesyndicatedsearch.com', 'q');
+  dalMainTracker._initData();
+  dalMainTracker._trackPageview();
+</script>
+<!-- End Analytics -->
+
+<script src="https://my.dal.ca/custom/dal2/js/jquery-current.js" type="text/javascript"></script><script src="https://my.dal.ca/custom/dal2/js/jquery-ui.js" type="text/javascript"></script><style type="text/css">#dalalert_box { background-color: #eff1e3; padding: 10px; display: none; } #dalalert_wrapper { -moz-border-radius: 5px; -webkit-border-radius: 5px; border: 1px solid #bb7900; background-color: #fafafa; padding: 10px; } #dalalert_left { width: 150px; float: left; font-size: 11px; padding-right: 20px; text-align: left; } #dalalert_left h1 { color: #aa0000; margin: 0px; font-size: 22px; font-weight: bold; } #dalalert_right { border-left: 1px solid #cccccc; width: 60%; float: left; padding-left: 20px; text-align: left; } #dalalert_dismiss { background: url(https://dalalert.dal.ca/templates/dal/media/alert_close.gif); width: 20px; height: 20px; float: right; text-align: right; } #dalalert_headline { font-size: 20px; font-weight: bold; margin: 0px; } #dalalert_timestamp { font-size: 11px; } #dalalert_desc { font-size: 14px; } #dalalert_info { font-size: 12px; } #dalalert_desc a { color: #aa0000; font-weight: bold; text-decoration: underline; } #dalalert_debug { font-size: 0.8em; }</style><script src="https://dalalert.dal.ca/feed.php"></script></head>
+</head>
+<body class="main" background="http://git.amoriarty.com/images/background.jpg">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody> 
+<tr>
+<td>
+  
+      <div id="dalAlert" title="portal"></div>
+	<div class="header">
+ <!--       <div class="ctn-boundary-login clearfix"> -->
+	<div class="ctn-boundary clearfix">
+          <div class="mainLogo">
+            <h2><a href="http://www.dal.ca/" title="Back to Dalhousie University Home Page">Dalhousie University - Inspiring Minds</a></h2>
+          </div>
+          <div class="mainTitle">
+            <h1>MAIN_TITLE</h1>
+            <h5>MAIN_SUBTITLE</h5>
+          </div>
+          <div id="accessHelpers">
+            <p id="skipToContent"><a href="https://my.dal.ca/cp/home/displaylogin#skipContent">Skip To Content</a></p>
+          </div>
+          
+          <div class="hdr-tools">
+            <!--DalSearch-->
+	    <div class="siteSearch">
+              <div class="hdr-search">
+                
+                <form id="nav_search_form" action="http://search.dal.ca/search" method="get" onsubmit="return fnMiniSearch(this);">
+                  <input type="hidden" value="default_collection" name="site">
+                  <input type="hidden" value="ucis_frontend" name="client">
+                  <input type="hidden" value="xml_no_dtd" name="output">
+                  <input type="hidden" value="ucis_frontend" name="proxystylesheet">
+                  <input type="hidden" value="ucis.dal.ca" name="dal_domain">
+                  <input type="hidden" value="ucis_frontend" name="dal_frontend">
+                  <input class="input-search-box" type="text" name="q" id="q" value="Search Dal.ca" size="18" maxlength="256">
+                  <input class="search-btn" type="submit" name="btnG" id="gs" value="">
+                </form>
+                             
+              </div>
+            </div>
+		<!--End-DalSearch-->
+          </div> <!-- end-of hdr-tools -->
+        </div> <!-- end-of ctn-boundary -->
+      </div><!-- Header -->
+  <div class="mainnav">
+		<ul id="tab_menu">
+		<!--TopNavigation-->
+			<li class="tab"><a href="http://my.dal.ca">MyDal</a></li>	
+			<li class="tab"><a href="http://www.dal.ca" >Dalhousie Home</a></li>
+			<li class="tab"><a href="http://www.google.ca">Google</a></li>			
+		<!--End TopNavigation-->
+		</ul>
+  </div>
+	
+  <div id="navigation">
+		<div id="clock"><script type="text/javascript">document.write((new Date()).toLocaleString())</script></div>
+		<div id="loading"><span>Updating ...</span></div>  
+  </div>
+      
+	<!-- Begin Content -->
+		<span id="content">
+		<div id="channels">
+		<!-- Content -->
+		</div> 
+		</span>
+	<!-- End Content -->
+  
+  <div class="footer">
+		<div class="ctn-boundary">
+			<p>            
+       		<b>Dalhousie University</b>
+       		<br>Halifax, Nova Scotia, Canada B3H 4R2
+       		<br>1.902.494.2211
+       		<br><span class="copyright">© 1996<script type="text/javascript">document.write("-" + (new Date()).getFullYear())</script> Dalhousie University</span>
+       	</p>
+
+			<ul>
+			<!-- DalFooter Nav -->
+				<li class="first-child"><a href="http://its.dal.ca/helpdesk/">Help Desk</a></li>
+				<li><a href="http://its.dal.ca/publications/policies/5.1.1-acceptable-use.pdf">Acceptable Use</a></li>
+				<li><a href="http://campusmap.dal.ca/">Campus Map</a></li>
+				<li><a href="https://directory.dal.ca/">Campus Directory</a></li>
+				<li><a href="http://staffingservices.dal.ca/Employment/">Employment</a></li>
+				<li><a href="http://media.dal.ca/">Media Centre</a></li>
+				<!-- <li><a href="">Privacy Statement</a></li> -->
+				<li><a onclick="javascript:k_button.open_ff(&#39;site_code=9766575&amp;form_id=37538&amp;lang=en&#39;);return false; dalMainTracker._trackPageview(&#39;/outgoing/portal/kampyle&#39;);" target="kampyleWindow" id="kampylink" name="kampylink" href="http://www.kampyle.com/?r=3">Feedback</a></li> 
+				<li class="last-child"><a href="http://www.dal.ca/terms_of_use.html">Disclaimer</a></li>
+			<!-- End DalFooter Nav -->
+			</ul>
+		</div>
+	</div>
+
+  
+	</td>
+	</tr>
+	</tbody>
+  </table>
+  
+
+
+
+
+ 
+</body></html>
