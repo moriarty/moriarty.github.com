@@ -1,0 +1,337 @@
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;	
+	margin: 0 0 0 0;
+	background: url("../media/background-texture.jpg") no-repeat center 51px fixed;
+	-webkit-background-size:cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+body a{
+	color: black;
+}
+html{
+
+}#new-wrap{
+	margin: 0 0 0 0;
+	background: url("../media/background-texture.jpg") no-repeat center 31px fixed;
+	-webkit-background-size:cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}	
+#wrap {
+	min-width: 1000px;	
+}
+header{
+	height: 50px;
+	width: 100%;
+	xmin-width: 900px;
+	xpadding: 0 20px;
+	padding-right: 20px;
+	background-color: gainsboro;
+	border-bottom: thin solid black;
+	position: fixed;
+	z-index: 20;
+	box-shadow: 0 0 5px black;
+	xvisibility: hidden;
+}
+#logo{
+	
+}
+#sitename {
+	padding: 0 10px;
+	float: left;
+	line-height: 50px;
+	font-size: xx-large;
+	font-weight: bold;
+}
+#sitename a{
+	text-decoration: none;
+}
+#sitename:hover {
+	background: darkgray;
+	text-decoration: underline;
+	
+}
+#topnav{
+	float: right;
+	text-align: left;
+	line-height: 50px;
+	margin-right: 40px;
+	font-weight: bold;
+	font-size: large;
+	text-transform: uppercase;
+}
+#topnav select{
+	display: none;
+}
+#topnavlist{
+	display: inline-block;
+}
+#topnav ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#topnav li{
+	float: left;
+}
+#topnav li:hover, li:active{
+	background: darkgray;
+	text-decoration: underline;
+}
+#topnav a{
+	display: block;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-decoration: none;
+	color: #000;
+}
+@media (max-width: 800px) {
+  #topnav ul   { display: none; }
+  #topnav select { display: inline-block; }
+} 
+
+.tinynav{
+	display: none;
+}
+.active {
+	xcolor: white;
+	background: darkgray;
+	xtext-decoration: underline;
+}
+/** Container contains the narrower bits **/
+#container{
+	float: left;
+	width: 70%;
+	min-width: 600px;
+	margin-left: 20%;
+	margin-right: 10%;
+	top: 51px;
+	xbackground-color: gray;
+	position: relative;
+
+}
+/** Container is wrapped to eventually transition different border **/
+#container-wrapper{
+	position: absolute;
+	width: 100%;
+	xpadding: 5px;
+}
+/** For now Border is one sided shadow **/
+.shadow-right{
+	-webkit-box-shadow: 5px 5px 5px  black;
+	-moz-box-shadow: 5px -5px 5px  black;
+    box-shadow: 5px -5px 5px  black;
+}
+/** Ideally border will be done with before and after **/
+#container-wrapper::before, #container-wrapper::after{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: black;
+}
+#pagehead{
+	overflow: hidden;
+}
+#breadcrumbs{
+	font-size: small;
+	text-transform: lowercase;
+	height: 20px;
+	xtop: 51px;
+	xwidth: 60%;
+	padding: 0 20px;
+	background-color: lightgray;
+	opacity: 0.7;
+	xposition: fixed;	
+}
+#breadcrumbs a{
+	text-decoration: none;
+}
+#breadcrumbs a:hover,a:active{
+	text-decoration: underline;
+}
+#pagetitle{
+	font-size: x-large;
+	font-weight: bold;
+	line-height: 60px;
+	height: 60px;
+	xpadding: 0 20px;
+	background-color: white;
+	opacity: 0.9;
+	z-index: 10;
+	text-align: center;
+	border-bottom: thin solid black;
+
+}
+/** Keeps page titles visable when scrolling**/
+.floatingHeader {
+
+  position: fixed;
+  width: 100%;
+  xmin-width: 600px;
+  top: 51px;
+  xleft: 30%;
+  xmargin-right: 40%;
+  visibility: hidden;
+  opacity: 1;
+  xpadding-left: 0;
+  xpadding-right: 0;
+}
+/** would be located under page title if needed **/
+#subnav{
+	
+}
+.persist-sub-header {
+	font-size: large;
+	font-weight: bold;
+	xline-height: 60px;
+	xpadding: 0;	
+	xheight: 40px;
+	padding: 5px 5px;
+	background-color: white;
+	opacity: 1;
+	z-index: 10;
+	text-align: left;
+	xtext-decoration: underline;
+	xborder-bottom: thin solid black;	
+}
+.floatingSubHeader {
+  position: fixed;
+  width: 100%;
+  xmin-width: 600px;
+  top: 112px;
+  xleft: 30%;
+  xmargin-right: 40%;
+  visibility: hidden;
+  opacity: 1;
+  xpadding-left: 0;
+  xpadding-right: 0;
+}
+#content{
+	padding-bottom: 20px;
+	xpadding: 10px 20px;
+	min-height: 400px;
+	background-color: white;
+	opacity: 0.9;
+}
+#content h1, h2, h3, h4, h5, h6{
+	margin-top: 0;
+	padding: 5px 5px
+}
+#content ol, ul{
+	padding: 5px 35px;
+}
+#content a[href$=".pdf"]:after {content: " (PDF)";}
+#content a[href$=".pdf"]:after {content: " (PDF, "attr(data-size)")";}
+
+#content p{ 
+	line-height: 150%;
+	margin: 0;
+	padding: 5px 10px 5px 10px;
+}
+#content img{  
+    border:2px groove black;  
+    border-radius: 10px;
+    padding: 4px 4px 4px 4px;
+    margin: 1px 1px 1px 1px;  
+    border:1px solid black;
+	background: gainsboro;
+    opacity: 1;
+} 
+#content table{
+	text-align: left;
+}
+#content th[colspan="2"]{ text-align: center;}
+#content th{text-align: right;}
+
+footer{
+	height: 120px;
+	background-color: lightgray;
+	opacity: 0.8;
+}
+/** SOCIAL MEDIA LINKS BAR **/
+/** Lots of extra unused CSS becuase still work in progress **/
+/** I am creating apropriate themed icons to fly in on hover **/
+#socialbar{
+	background-color: orange;
+	height: 30px;
+	padding: 0 20px;
+	text-align: justify;
+	line-height: 30px;
+}
+#socialbar a{
+	text-decoration: none;
+}
+#socialbar div{
+	width: 70px;
+	height: 30px;
+	display: inline-block;
+	xbackground: white;
+}
+#socialbar:after{
+	content: '';
+	width: 100%;
+	display: inline-block;
+}
+.socialbar-box {
+    color: black;
+    -webkit-transition:all 0.2s ease;
+    -moz-transition:all 0.2s ease;
+    background-position:320px 50%;
+    background-repeat:no-repeat;
+    text-decoration: none;
+}
+.socialbar-box:hover {
+	color: black;
+	font-weight: bold;
+	background-position:200px 50%;
+}
+/** Lower Footer is Footer area bellow Social links **/
+/** [ [address] [footlogo] [footnav] ]**/
+#lowerfoot{
+	text-align: justify;
+	height: 90px;
+}
+#lowerfoot div{
+	width: 170px;
+	display: inline-block;
+}
+#lowerfoot:after{
+	content: '';
+	width: 100%;
+	display: inline-block;
+}
+#contact{
+	text-align: left;
+	font-size: small;
+	padding: 5px;
+	height: 78px;
+}
+#footlogo{
+	text-align: center;
+	padding: 5px;
+	font-size: 5em;
+	xline-height: 60px;
+}
+#footnav{
+	text-align: right;
+	padding: 5px;
+}
+#playpause{
+	position: fixed;
+	left: 5px;
+	bottom: 5px;
+	z-index: 10;
+	height: 40px;
+	width: 40px;
+	xbackground: gray;
+	background-size: 100%;
+	background-image: url("../media/playpause.png");
+
+}
